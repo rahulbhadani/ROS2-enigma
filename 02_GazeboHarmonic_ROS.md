@@ -51,3 +51,8 @@ ros2 pkg create --build-type ament_cmake robot_sim
 cd  ~/ros_ws/src/robot_sim
 mkdir model params launch
 ```
+
+## Robot Models
+Robot models in the form of URDF are kept in `cd  ~/ros_ws/src/robot_sim/model`.
+
+
