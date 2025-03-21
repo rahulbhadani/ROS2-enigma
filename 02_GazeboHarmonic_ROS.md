@@ -36,10 +36,18 @@ mkdir -p ~/ros_ws/src
 cd ~/ros_ws
 colcon build
 ```
-If you are gonna use the same workspace, add to ~/.bashrc as well:
+If you are gonna use the same workspace, add the following to ~/.bashrc as well.
 
 ```{bash}
 echo "source ~/ros_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
+## Creating a Package
+
+```{bash}
+cd ~/ros_ws/src
+ros2 pkg create --build-type ament_cmake robot_sim
+cd  ~/ros_ws/src/robot_sim
+mkdir model params launch
+```
